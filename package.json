@@ -1,0 +1,35 @@
+{
+  "name": "specific-xml-gen",
+  "version": "1.0.0",
+  "description": "simple and specific xml generator",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otaviopace/specific-xml-gen.git"
+  },
+  "keywords": [
+    "xml",
+    "generator",
+    "simple",
+    "specific"
+  ],
+  "author": "Otávio Pace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otaviopace/specific-xml-gen/issues"
+  },
+  "homepage": "https://github.com/otaviopace/specific-xml-gen#readme"
+}
