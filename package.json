@@ -1,6 +1,6 @@
 {
   "name": "specific-xml-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple and specific xml generator",
   "main": "index.js",
   "directories": {
