@@ -1,4 +1,5 @@
 # Specific XML Gen
+[![Build Status](https://travis-ci.org/otaviopace/specific-xml-gen.svg?branch=master)](https://travis-ci.org/otaviopace/specific-xml-gen)
 
 This project is meant to generate XML based on a JavaScript object.
 
