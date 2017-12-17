@@ -28,7 +28,8 @@ describe('specific-xml-gen', () => {
   }
 
   it('should generate parsed xml', () => {
-    expect(parser(obj1)).to.equal(`<prop1>a</prop1>
+    expect(parser(obj1)).to.equal(
+`<prop1>a</prop1>
 <prop2>2</prop2>
 <prop3>
 <bla1>1234</bla1>
@@ -49,11 +50,13 @@ describe('specific-xml-gen', () => {
 <stuff>false</stuff>
 </zup>
 </prop>
-</prop4>`)
+</prop4>`
+    )
   })
 
   it('should generate parsed xml with capitalized tags', () => {
-    expect(parser(obj1, true)).to.equal(`<Prop1>a</Prop1>
+    expect(parser(obj1, true)).to.equal(
+`<Prop1>a</Prop1>
 <Prop2>2</Prop2>
 <Prop3>
 <Bla1>1234</Bla1>
@@ -74,6 +77,7 @@ describe('specific-xml-gen', () => {
 <Stuff>false</Stuff>
 </Zup>
 </Prop>
-</Prop4>`)
+</Prop4>`
+    )
   })
 })
