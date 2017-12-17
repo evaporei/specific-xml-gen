@@ -9,6 +9,7 @@ This project is meant to generate XML based on a JavaScript object.
 
 # Usage
 
+## Just the object
 ```javascript
 const parser = require('specific-xml-gen')
 
@@ -31,3 +32,32 @@ console.log(xml)
 // </prop>
 // </props/>
 ```
+
+## Capitalizing tags
+```javascript
+const parser = require('specific-xml-gen')
+
+const xml = parser(
+  {
+    prop1: 4,
+    props: [
+      { a: 'b' },
+      { z: true },
+    ],
+  },
+  true
+)
+
+console.log(xml)
+// <Prop1>4</Prop1>
+// <Props>
+// <Prop>
+// <A>b</A>
+// </Prop>
+// <Prop>
+// <Z>true</Z>
+// </Prop>
+// </Props/>
+```
+
+
